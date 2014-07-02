@@ -1,3 +1,9 @@
 <div id='container'>
   <!-- Your html here -->
+  <div ng-controller='LinksController'>
+    <ul>
+      <li ng-repeat='links in data.links'>{{ links }}</li>
+    </ul>
+    <a href="/#/shorten">Shorten Links</a>
+  </div>
 </div>
