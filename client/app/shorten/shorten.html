@@ -15,10 +15,12 @@
       </div>
     </div>
   </nav>
-  <div class="container">
-    <form ng-submit='addLink()' class="has-warning">
-      <input type='url' class="form-control" ng-model='link.url' placeholder="Enter a URL"/>
-    </form>
+  <div class="container form-group">
+    <div>
+      <form ng-submit='addLink()' ng-class="{'has-success': link.url}" novalidate>
+        <input type='url' class="form-control" ng-model='link.url' placeholder="Enter a URL" required/>
+      </form>
+    </div>
   </div>
 </div>
 
