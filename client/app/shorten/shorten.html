@@ -2,7 +2,7 @@
 <!-- Your code here -->
   <div ng-controller='ShortenController'>
     <div class='navigation'>
-      <a href="/#/links">Links</a>
+      <a ui-sref="links">Links</a>
     </div>
     <form ng-submit='addLink()'>
       <input type='url' ng-model='link.url'/>
