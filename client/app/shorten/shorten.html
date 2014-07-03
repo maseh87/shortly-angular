@@ -1,6 +1,6 @@
 <div id='container'>
 <!-- Your code here -->
-  <nav class="navbar navbar-default" role="navigation">
+  <nav class="navbar navbar-primary" role="navigation">
     <a class="navbar-brand" ui-sref="shorten">Shortly</a>
     <div class="container">
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -15,9 +15,11 @@
       </div>
     </div>
   </nav>
-  <form ng-submit='addLink()'>
-    <input type='url' ng-model='link.url' placeholder="Enter a URL"/>
-  </form>
+  <div class="container">
+    <form ng-submit='addLink()' class="has-warning">
+      <input type='url' class="form-control" ng-model='link.url' placeholder="Enter a URL"/>
+    </form>
+  </div>
 </div>
 
 
