@@ -1,13 +1,23 @@
 <div id='container'>
 <!-- Your code here -->
-  <div ng-controller='ShortenController'>
-    <div class='navigation'>
-      <a ui-sref="links">Links</a>
+  <nav class="navbar navbar-default" role="navigation">
+    <a class="navbar-brand" ui-sref="shorten">Shortly</a>
+    <div class="container">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a ui-sref="shorten">Shorten Links</a>
+          </li>
+          <li class="active">
+            <a ui-sref="links">My Links</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <form ng-submit='addLink()'>
-      <input type='url' ng-model='link.url'/>
-    </form>
-  </div>
+  </nav>
+  <form ng-submit='addLink()'>
+    <input type='url' ng-model='link.url' placeholder="Enter a URL"/>
+  </form>
 </div>
 
 

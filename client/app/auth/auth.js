@@ -13,7 +13,7 @@ angular.module('shortly.auth', [])
         $location.path('/links');
       })
       .catch(function (error) {
-        console.error(error);
+        alert('Username or Password Invalid');
       });
   };
 

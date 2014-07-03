@@ -1,6 +1,8 @@
-<div>
-  <div class='link'>
+<div class='page-header'>
     <a ng-href="{{ link.base_url + '/api/links/' + link.code}}">{{ link.title }}</a>
+<div>
+  <div class='page-header'>
+    Visits: {{ link.visits }}
+    <small><a href="{{ link.url }}">{{ link.url }}</a></small>
   </div>
-  <div class='visits'>{{ link.visits }}</div>
 </div>
