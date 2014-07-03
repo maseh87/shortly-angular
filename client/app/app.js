@@ -5,7 +5,9 @@ angular.module('shortly', [
   'shortly.auth',
   'ngRoute'
 ])
-.config(function($routeProvider, $httpProvider) {
+.config(function($routeProvider, $httpProvider, $interpolateProvider) {
+  // $interpolateProvider.startSymbol('!!');
+  // $interpolateProvider.endSymbol('!!');
   $routeProvider
     .when('/signin', {
       templateUrl: 'app/auth/signin.html',
