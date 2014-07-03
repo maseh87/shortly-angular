@@ -80,11 +80,4 @@ angular.module('shortly.services', [])
     isAuth: isAuth,
     signout: signout
   };
-})
-.directive('card', function() {
-  return {
-    restrict: 'A',
-    templateUrl: '',
-    scope: 'LinkController'
-  };
 });
