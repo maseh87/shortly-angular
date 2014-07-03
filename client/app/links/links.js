@@ -14,9 +14,10 @@ angular.module('shortly.links', [])
   return {
     restrict: 'E',
     link: function(scope, element, attr) {
-
+      console.log(scope.link);
     },
     templateUrl: 'app/links/link.tpl.html',
-    replace: true
+    replace: true,
+    scope: {link: '='}
   };
 });
