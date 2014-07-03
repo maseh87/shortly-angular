@@ -1,9 +1,14 @@
 <div id='container'>
   <!-- Your html here -->
   <div ng-controller='LinksController'>
+    <div class='navigation'>
+      <a href="/#/shorten">Shorten Links</a>
+    </div>
+    <input type='text' placeholder='Search' ng-model='searchBy'/>
     <ul>
-      <li ng-repeat='links in data.links'>{{ links }}</li>
+      <li class='link' ng-repeat="links in data.links | orderBy: 'visits': false | filter: searchBy">
+        <a ng-href="{{ links.base_url + '/api/links/' + links.code}}">{{ links.title }}</a>
+      </li>
     </ul>
-    <a href="/#/shorten">Shorten Links</a>
   </div>
 </div>

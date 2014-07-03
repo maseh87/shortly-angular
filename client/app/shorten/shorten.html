@@ -1,7 +1,12 @@
 <div id='container'>
 <!-- Your code here -->
   <div ng-controller='ShortenController'>
-    <a href="/#/links">Links</a>
+    <div class='navigation'>
+      <a href="/#/links">Links</a>
+    </div>
+    <form ng-submit='addLink()'>
+      <input type='url' ng-model='link.url'/>
+    </form>
   </div>
 </div>
 
