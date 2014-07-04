@@ -1,10 +1,13 @@
-<div class='page-header'>
-    <a ng-href="{{ link.base_url + '/api/links/' + link.code}}">{{ link.title }}</a>
-<div>
-  <div class='page-header'>
-    <p>
-      Visits: {{ link.visits }}
-    </p>
-    <a href="{{ link.url }}">{{ link.url }}</a>
+
+  <div class='dialog'>
+    <div class='page-header dialog'>
+        <a ng-href="{{ link.base_url + '/api/links/' + link.code}}">{{ link.title }}</a>
+    <div>
+      <div class='page-header'>
+        <p>
+          Visits: {{ link.visits }}
+        </p>
+        <a href="{{ link.url }}">{{ link.url }}</a>
+      </div>
+    </div>
   </div>
-</div>

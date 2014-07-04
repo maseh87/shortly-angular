@@ -17,6 +17,7 @@
     "ng-Fx": "~0.4.1",
     "angular-ui-router": "~0.2.10",
     "components-bootstrap": "~3.2.0",
-    "paper-elements": "Polymer/paper-elements#~0.3.3"
+    "paper-elements": "Polymer/paper-elements#~0.3.3",
+    "paper-menu-button": "Polymer/paper-menu-button#~0.3.3"
   }
 }
