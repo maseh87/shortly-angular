@@ -1,6 +1,6 @@
-<!-- <div id='container'> -->
+<div id='container'> -->
   <!-- Your html here -->
-    <!-- <nav class="navbar navbar-primary" role="navigation">
+    <nav class="navbar navbar-primary" role="navigation">
       <a class="navbar-brand" ui-sref="shorten">Shortly</a>
       <div class="container">
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -22,9 +22,30 @@
     </nav>
     <div class="container">
         <card ng-repeat="link in data.links | orderBy: 'visits': false | filter: searchBy" link='link' class='fx-zoom-normal fx-speed-800 card col-md-6 col-md-offset-3'></card>
-    </div> -->
-<!-- </div> -->
-<section>
+    </div>
+</div>
+<!-- <core-drawer-panel class="left-drawer">
+  <div drawer>
+    <core-menu>
+      <paper-item icon="chevron-right">Shorten Links</paper-item>
+      <paper-item icon="chevron-right">My Links</paper-item>
+    </core-menu>
+  </div>
+  <div main>
+    <core-header-panel mode="cover" shadow="true">
+      <div class="card" style="overflow: visible;" card>
+        <paper-shadow z="3">
+          <div  ng-repeat="link in data.links">
+            <div class="card-inner">
+              <card></card>
+            </div>
+          </div>
+        </paper-shadow>
+      </div>
+    </core-header-panel>
+  </div>
+</core-drawer-panel> -->
+<!-- <section>
   <div class="card" style="overflow: visible;">
     <paper-shadow z="3">
       <div class="card-inner">

@@ -166,14 +166,31 @@ section {
   display: -webkit-flex;
   width: 80%;
   margin: 16px;
-
 }
 
 
+[main] {
+  background-color: white;
+}
 
+[drawer] {
+  background-color: lightblue;
+}
 
+[card] {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+}
 
-
+core-header-panel[mode=cover]::shadow #mainContainer {
+  left: 80px;
+}
+.content {
+  margin: 60px 60px 60px 0;
+}
 
 
 
